@@ -1,4 +1,4 @@
-package com.company.app.threadsafe;
+package com.company.app.StringuilderVsStringBuffer;
 
 public class PerformanceStrBuilderVsStrBuffer {
   public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class PerformanceStrBuilderVsStrBuffer {
       long t;
 
       {
-          //StringBuilder It's faster, because it's not synchronized
+        // StringBuffer is synchronized (disc access)
           StringBuffer sb = new StringBuffer();
           t = System.currentTimeMillis();
           for (int i = N; i > 0 ; i--) {
@@ -17,7 +17,8 @@ public class PerformanceStrBuilderVsStrBuffer {
       }
       
       
-      // StringBuilder is synchronized
+      
+      //StringBuilder It's faster, because it's not synchronized
       {
           StringBuilder sb = new StringBuilder();
           t = System.currentTimeMillis();
