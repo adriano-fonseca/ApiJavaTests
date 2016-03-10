@@ -24,13 +24,11 @@ public class HashSetTest {
     HashSet<Book> hashSet = new HashSet<Book>();
     hashSet.add(b1);
     hashSet.add(b2);
-    
+        
     /* Without equals e hash code in book
      * hashset does work as should (avoid repetition)
      * because it have not how know that the objects are the same
      * in order of see work fine just create equals and hashset in book
-     * 
-     * 
      * */
     
     Iterator<Book>it =hashSet.iterator();
@@ -41,5 +39,5 @@ public class HashSetTest {
     
     System.out.println(hashSet.toString());
   }
-
+  
 }

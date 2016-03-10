@@ -46,5 +46,8 @@ public class ArrayListTest {
     System.out.println("=======Title==========");
     Collections.sort(lista,Book.Comparators.TITLE);
     System.out.println(lista);
+    Collections.reverse(lista);
+    System.out.println("=======Title Reverse==========");
+    System.out.println(lista);
   }
 }
