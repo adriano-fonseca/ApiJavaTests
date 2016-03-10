@@ -6,7 +6,7 @@ public class PerformanceStrBuilderVsStrBuffer {
       long t;
 
       {
-        // StringBuffer is synchronized (disc access)
+        // StringBuffer is synchronized (thread safe)
           StringBuffer sb = new StringBuffer();
           t = System.currentTimeMillis();
           for (int i = N; i > 0 ; i--) {
