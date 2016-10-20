@@ -1,4 +1,4 @@
-package com.company.app.java;
+package com.company.app.java.queryBuilder;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;

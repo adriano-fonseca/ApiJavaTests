@@ -1,4 +1,4 @@
-package com.company.app.java;
+package com.company.app.java.queryBuilder;
 
 public class ArrayStructures {
   
